@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Yeon Sung', Georgia;
+  font-family: 'Yeon Sung', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face{
-  font-family: Yeon Sung;
+/* @font-face{
+  font-family: 'Yeon Sung', cursive;
   src:
   local(Yeon Sung),
   local(Yeon-Sung),
   url(http://pop.baemin.com/fonts/yeonsung/BMYEONSUNG_ttf.ttf);
-}
+} */
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
