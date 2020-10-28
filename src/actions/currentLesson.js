@@ -7,7 +7,7 @@ export const setCurrentLesson = lesson => {
 
 export const associateUser = (lesson, id, history) => {
     return dispatch => {
-        fetch(`http://hara-back-api.herokuapp.com/api/v1/lessons/${id}`, {
+        fetch(`https://hara-back-api.herokuapp.com/api/v1/lessons/${id}`, {
             method: 'PATCH',
             headers:{
                 'Content-Type': 'application/json',

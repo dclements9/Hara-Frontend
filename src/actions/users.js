@@ -1,6 +1,6 @@
 export const getUsers = () => {
     return dispatch => {
-        return fetch(`http://hara-back-api.herokuapp.com/api/v1/users`)
+        return fetch(`https://hara-back-api.herokuapp.com/api/v1/users`)
             .then(resp => resp.json())
             .then(users => dispatch({ type: 'USERS_FETCHED', payload: users}))
     }
@@ -8,7 +8,7 @@ export const getUsers = () => {
 
 export const createUser = (user, history) => {
     return dispatch => {
-        fetch(`http://hara-back-api.herokuapp.com/api/v1/users`, {
+        fetch(`https://hara-back-api.herokuapp.com/api/v1/users`, {
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json',
@@ -25,7 +25,7 @@ export const createUser = (user, history) => {
 
 export const updateUser = (user, id, history) => {
     return dispatch => {
-        fetch(`http://hara-back-api.herokuapp.com/api/v1/users/${id}`, {
+        fetch(`https://hara-back-api.herokuapp.com/api/v1/users/${id}`, {
             method: 'PATCH',
             headers:{
                 'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ export const updateUser = (user, id, history) => {
 
 export const deleteUser = (id, history) => {
     return dispatch => {
-        fetch(`http://hara-back-api.herokuapp.com/api/v1/users/${id}`,{
+        fetch(`https://hara-back-api.herokuapp.com/api/v1/users/${id}`,{
             method: 'DELETE'})
             .then( resp => resp.json())
             .then(id => {

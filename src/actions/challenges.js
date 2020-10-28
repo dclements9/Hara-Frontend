@@ -1,6 +1,6 @@
 export const getChallenges = () => {
     return dispatch => {
-        return fetch(`http://hara-back-api.herokuapp.com/api/v1/challenges`)
+        return fetch(`https://hara-back-api.herokuapp.com/api/v1/challenges`)
             .then(resp => resp.json())
             .then(challenges => dispatch({ type: 'CHALLENGES_FETCH_SUCCESS', payload: challenges}))
     }
@@ -8,7 +8,7 @@ export const getChallenges = () => {
 
 export const createChallenge = (challenge, history) => {
     return dispatch => {
-        fetch(`http://hara-back-api.herokuapp.com/api/v1/challenges`, {
+        fetch(`https://hara-back-api.herokuapp.com/api/v1/challenges`, {
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json',
@@ -25,7 +25,7 @@ export const createChallenge = (challenge, history) => {
 
 export const updateChallenge = (challenge, id, history) => {
     return dispatch => {
-        fetch(`http://hara-back-api.herokuapp.com/api/v1/challenges/${id}`, {
+        fetch(`https://hara-back-api.herokuapp.com/api/v1/challenges/${id}`, {
             method: 'PATCH',
             headers:{
                 'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ export const updateChallenge = (challenge, id, history) => {
 
 export const deleteChallenge = (id, history) => {
     return dispatch => {
-        fetch(`http://hara-back-api.herokuapp.com/api/v1/challenges/${id}`,{
+        fetch(`https://hara-back-api.herokuapp.com/api/v1/challenges/${id}`,{
             method: 'DELETE'})
             .then( resp => resp.json())
             .then(id => {
