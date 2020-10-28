@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 
 body {
+  color: #99a8b2;
   margin: 0;
   font-family: 'Yeon Sung', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+p {
+  color: #009176;
+  font-size: 22px;
+}
+
+a:hover{
+  color: #5dd39e;
+  text-decoration: none;
 }
