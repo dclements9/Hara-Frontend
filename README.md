@@ -6,7 +6,7 @@ This is the Client/Frontend. For the API/Backend visit:
 
 For a Live Heroku Demo (Database refreshed every day at midnight): 
 
-[Hara-Heroku](http://hara-client.herokuapp.com/)
+[Hara-Heroku](https://hara-client.herokuapp.com/)
 
 ### Student Portal coming soon!
 
