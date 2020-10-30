@@ -48,4 +48,5 @@ Everyone interacting in the Hara project’s codebases, issue trackers, chat roo
 ## TODO
 
 * Recurring lessons
+
 * RetrieveCurrentLesson - Use minutes with hours for reduce difference
