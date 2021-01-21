@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
+    "immer": "^8.0.1",
     "kind-of": "^6.0.3",
     "object-path": "^0.11.5",
     "react": "^16.14.0",
